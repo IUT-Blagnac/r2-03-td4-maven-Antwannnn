@@ -9,6 +9,8 @@
   <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
   <build>
@@ -16,10 +18,10 @@
      <plugin>
        <groupId>org.apache.maven.plugins</groupId>
        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+         <version>3.8.1</version>
         <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
+            <source>9</source>
+            <target>9</target>
         </configuration>
       </plugin>
       <plugin>
@@ -28,7 +30,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>HelloJava</mainClass>
+              <mainClass>MainSchtroumpf</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -38,7 +40,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.3.2</version>
         <configuration> 
-          <source>8</source> 
+          <source>9</source>
           <doclint>none</doclint>
         </configuration>
       </plugin>
